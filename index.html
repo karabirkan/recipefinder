@@ -7,98 +7,217 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Finder</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8f528c412d.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
     <!-- Header -->
 
-    <div class="nav">
-        <h2 class="logo">Birkan <span>Kara </span> </h2>
+
+    <nav>
+
+
+
 
         <ul class="navbar">
-            <li class="nav-item"><a href="#">Home</a></li>
-            <li class="nav-item"><a href="#">Recipes</a></li>
-            <li class="nav-item"><a href="#">Contact</a></li>
+            <li class="nav-item"><a href="#hero">HOME</a></li>
+            <li class="nav-item"><a href="#recipes">RECIPES</a></li>
+            <li class="nav-item"> <a href="./index.html"><img src="./images/logo.png" alt=""></a></li>
+            <li class="nav-item"><a href="#about">ABOUT US</a></li>
+            <li class="nav-item"><a href="#contact">CONTACT</a></li>
         </ul>
 
 
-    </div>
+
+    </nav>
 
     <!-- Landing Items -->
-    <div class="container">
-        <div class="item1">Logo + Button</div>
-        <div class="item2">Image On Right Side</div>
-    </div>
+    <section class="hero-section">
+        <div class="hero" id="hero">
+            <div class="hero-text">
+                <h4>Find the recipes now</h4>
+                <h1>Save your <span id="hero-text-span">time</span> with our food recipes</h1>
+                <p>Search your food, prepare it and enjoy with it.</p>
+                <div class="hero-buttons">
+                    <a href="#recipes"> <button class="btn">CreateNow</button></a>
+                    <a href="#contact"><button class="btn" style="background-color: black;border: 1px solid black;
+                    ">ContactUs</button></a>
+                </div>
+            </div>
 
+
+        </div>
+
+        <div class="hero-image"><img src="./images/item2-img.png" alt=""></div>
+    </section>
 
     <!-- Recipe Generator -->
+    <section class="recipe-section">
 
-    <div class="main">
-        <div class="recipe-list" id="trending-recipes">
-            <button id="btn-trending">Trending Recipes</button>
 
-            <ul class="recipe-ul">
+        <div class="main" id="recipes">
+
+            <div class="recipe-list">
+                <h1>Trending <span id="recipe-text-span">Recipes</span></h1>
+                <button class="btn" id="btn-trending">Show a Recipe</button>
+                <p>click the button above to create a new recipe</p>
+                <ul class="recipe-ul" id="trending-recipes">
+                    <li>
+                        <img src="./images/classicpasta.png" alt="classicpasta" id="recipe-thumbnail">
+                        <h4>Grilled Greek Chicken </h4>
+                    </li>
+                    <h3>Ingredients:</h3>
+                    <li>6 cloves garlic (or more to taste), crushed or very finely minced</li>
+                    <li>2 tablespoons dried oregano
+                    </li>
+                    <li>1 teaspoon red pepper flakes, or to taste</li>
+                    <li>1 teaspoon freshly ground black pepper</li>
+                    <li>½ cup lemon juice</li>
+
+                </ul>
+            </div>
+
+
+            <div class="recipe-list">
+                <h1>Popular <span id="recipe-text-span">Recipes</span></h1>
+                <button class="btn" id="btn-popular">Show a Recipe</button>
+                <p>click the button above to create a new recipe</p>
+                <ul class="recipe-ul" id="popular-recipes">
+                    <li>
+                        <img src="./images/classicpasta.png" alt="classicpasta" id="recipe-thumbnail">
+                        <h4>Grilled Greek Chicken </h4>
+                    </li>
+                    <h3>Ingredients:</h3>
+                    <li>6 cloves garlic (or more to taste), crushed or very finely minced</li>
+                    <li>2 tablespoons dried oregano
+                    </li>
+                    <li>1 teaspoon red pepper flakes, or to taste</li>
+                    <li>1 teaspoon freshly ground black pepper</li>
+                    <li>½ cup lemon juice</li>
+
+
+                </ul>
+            </div>
+
+
+            <div class="recipe-list">
+                <h1>Quick <span id="recipe-text-span">Recipes</span> </h1>
+                <button class="btn" id="btn-quick">Show a Recipe</button>
+                <p>click the button above to create a new recipe</p>
+                <ul class="recipe-ul" id="quick-recipes">
+                    <li>
+                        <img src="./images/classicpasta.png" alt="classicpasta" id="recipe-thumbnail">
+                        <h4>Grilled Greek Chicken </h4>
+                    </li>
+                    <h3>Ingredients:</h3>
+                    <li>6 cloves garlic (or more to taste), crushed or very finely minced</li>
+                    <li>2 tablespoons dried oregano
+                    </li>
+                    <li>1 teaspoon red pepper flakes, or to taste</li>
+                    <li>1 teaspoon freshly ground black pepper</li>
+                    <li>½ cup lemon juice</li>
+
+
+                </ul>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Random Recipe
+    <section class="surprise-section" id="surpriseme">
+        <button class="btn">Suprise Me</button>
+        <div class="content">
+            <ul class="surprise-me-recipe">
                 <li>
                     <img src="./images/classicpasta.png" alt="classicpasta" id="recipe-thumbnail">
-                    <p>Trending Food1</p>
+                    <h4>Grilled Greek Chicken </h4>
                 </li>
-                <li>
-                    <img src="./images/classicpasta.png" alt="classicpasta" id="recipe-thumbnail">
-                    <p>Trending Food2</p>
+                <h3>Ingredients:</h3>
+                <li>6 cloves garlic (or more to taste), crushed or very finely minced</li>
+                <li>2 tablespoons dried oregano
                 </li>
-                <li>
-                    <img src="./images/classicpasta.png" alt="classicpasta" id="recipe-thumbnail">
-                    <p>Trending Food3</p>
-                </li>
+                <li>1 teaspoon red pepper flakes, or to taste</li>
+                <li>1 teaspoon freshly ground black pepper</li>
+                <li>½ cup lemon juice</li>
             </ul>
         </div>
+    </section> -->
 
 
-        <div class="recipe-list" id="popular-recipes">
-            <button id="btn-popular">Popular Recipes</button>
+    <!-- About Us -->
+    <section class="about-us" id="about">
+        <div class="about-content">
+            <div class="about-img">
+                <img src="./images/justlogo.png" alt="" width="350px">
+            </div>
+            <div class="about-info">
+                <h4>About us</h4>
+                <h3>RecipeFinder.app</h3>
+                <p>Welcome to RecipeFinder, your go-to app for discovering delicious recipes! Our team is passionate
+                    about bringing you the best culinary experiences from around the world, all in one convenient place.
+                    <br> Thank you for choosing RecipeFinder!
 
-            <ul class="recipe-ul">
-                <li>
-                    <img src="./images/classicpasta.png" alt="classicpasta" id="recipe-thumbnail">
-                    <p>Popular Food1</p>
-                </li>
-                <li>
-                    <img src="./images/classicpasta.png" alt="classicpasta" id="recipe-thumbnail">
-                    <p>Popular Food2</p>
-                </li>
-                <li>
-                    <img src="./images/classicpasta.png" alt="classicpasta" id="recipe-thumbnail">
-                    <p>Popular Food3</p>
-                </li>
-            </ul>
+                </p>
+                <h2>Available on iOS and Android</h2>
+                <div>
+                    <a href="apple.com">
+                        <img src="./images/badge-apple.png" alt="">
+                    </a>
+                    <a href="google.com">
+                        <img src="./images/badge-android.png" alt="">
+                    </a>
+                </div>
+
+            </div>
         </div>
+    </section>
 
 
-        <div class="recipe-list" id="quick-recipes">
-            <button id="btn-quick">Quick Recipes</button>
 
-            <ul class="recipe-ul">
-                <li>
-                    <img src="./images/classicpasta.png" alt="classicpasta" id="recipe-thumbnail">
-                    <p>Quick Food1</p>
-                </li>
-                <li>
-                    <img src="./images/classicpasta.png" alt="classicpasta" id="recipe-thumbnail">
-                    <p>Quick Food1</p>
-                </li>
-                <li>
-                    <img src="./images/classicpasta.png" alt="classicpasta" id="recipe-thumbnail">
-                    <p>Quick Food1</p>
-                </li>
-            </ul>
+    <section class="contact">
+        <div class="contact-us" id="contact">
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h2>Need additional information?</h2>
+                    <p>We would love to hear from you! If you have any questions, comments, or feedback, please don't
+                        hesitate to contact us. You can reach us by filling out the contact form below or by sending an
+                        email to birkannewyork@gmail.com We will do our best to respond to your inquiry as soon as
+                        possible.
+                        <br>
+                        Thank you for visiting our website and for your interest in
+                        contacting us. We look forward to hearing from you!
+                    </p>
+
+                    <a href=""><i class="fa-solid fa-phone"></i>&nbsp;(123)456-7890</a>
+                    <a href=""><i class="fa-solid fa-envelope"></i>&nbsp;birkannewyork@gmail.com</a>
+                    <a href=""><i class="fa-sharp fa-solid fa-location-dot"></i>&nbsp;Istanbul,Turkey</a>
+                </div>
+                <div class="contact-form">
+                    <form action="">
+                        <label for="fullname">Full Name <b>*</b></label>
+                        <input type="text" name="fullname" id="fullname" placeholder='E.g: "Birkan Kara"'>
+                        <label for="email">Email <b>*</b></label>
+                        <input type="email" name="email" placeholder="youremail@example.com">
+                        <label for="tellus">Tell us about it</label>
+                        <textarea name="tellus" id="tellus" cols="30" rows="10"
+                            placeholder="Write it here..."></textarea>
+                        <button class="btn">Send Message</button>
+                    </form>
+                </div>
+
+
+
+            </div>
+
+
+
+
         </div>
-    </div>
-    <!-- Random Recipe -->
-    <div class="content">
-        <button>Suprise Me</button>
-        <p>Random Recipe</p>
-    </div>
+    </section>
 
     <!-- Footer -->
     <div class="footer">Created by Birkan Kara</div>
